@@ -116,6 +116,7 @@
 
   .home{
     height: 100vh;
+    background: #1f242d;
     display: flex;
     align-items: center;
     color: white;
@@ -383,6 +384,11 @@
  }
 
   @media (max-width: 480px) {
+
+    .home {
+      height: max-content;
+    }
+
     .home-info h1 {
       font-size: 30px;
     }
@@ -394,6 +400,9 @@
 
     .home-info p {
       font-size: 14px;
+      margin-top: 5px;
+      line-height: 1.7;
+
     }
 
     .home-info {
@@ -422,6 +431,7 @@
 
     .sci {
       margin-top: 10px;
+      padding-bottom: 20px;
     }
   }
 
