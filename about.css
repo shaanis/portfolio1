@@ -99,12 +99,18 @@
         justify-content: center;
         align-items: center;
         padding-top: 50px;
+        height: 100%;
+        width: 100%;
         overflow: hidden;
     }
 
     .about-details {
-    width: 550px;
-    padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    /* width: 500px; */
+    padding: 60px;
 }
 
 .about-details div {
