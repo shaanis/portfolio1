@@ -1,6 +1,6 @@
 .about {
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,6 +10,7 @@
   opacity: 0;
   animation: show-content 1.5s linear forwards;
   animation-delay: 1.2s;
+  flex-wrap: wrap;
 }
 
 @keyframes show-content {
@@ -32,18 +33,25 @@
 }
 
 .about-img img {
-  float: right;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .about-details {
-  width: 600px;
+  max-width: 600px;
+  padding: 15px;
+}
+
+.about-details h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
 }
 
 .about-details p {
+  font-size: 16px;
+  line-height: 1.6;
   text-align: justify;
-  line-height: 25px;
   margin-top: 15px;
 }
 
@@ -55,36 +63,28 @@
   display: inline-block;
   font-weight: 600;
   font-size: 25px;
-  /* -webkit-text-stroke: .7px #7cf03d ; */
   animation: display-text 16s linear infinite;
   animation-delay: calc(-4s * var(--i));
 }
 
 @keyframes display-text {
-
-  25%,
-  100% {
+  25%, 100% {
     display: none;
   }
 }
 
 .about-details div {
-
   margin-top: 30px;
-
 }
 
 .about-details div a {
   background: #7cf03d;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding: 10px 18px;
   border-radius: 20px;
   box-shadow: #7cf03d 0px 0px 10px;
   font-weight: 600;
   color: rgb(22, 31, 39);
-  border: transparent solid 2px;
+  border: 2px solid transparent;
   transition: 0.5s;
 }
 
@@ -95,35 +95,51 @@
   color: #7cf03d;
 }
 
+/* Responsive Styles */
 @media (max-width: 768px) {
   .about {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 80px;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-
+    padding: 40px 20px;
   }
 
-  .about-details {
-    display: flex;
-    flex-direction: column;
-    padding: 60px;
+  .about-img {
+    margin: 0 0 30px 0;
+    height: 180px;
+    width: 180px;
+    display: none;
   }
 
-  .about-details p+h1+span {
-    text-align: justify;
-    line-height: 25px;
-    margin-top: 15px;
+  .about-details .about-text{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .about-details h1 {
+    font-size: 26px;
+    /* text-align: center; */
+  }
+
+  .designation {
+    font-size: 20px;
+    /* text-align: center; */
+    display: block;
+    margin: 8px 0;
+  }
+
+  .about-details p {
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 0 10px;
   }
 
   .about-details div {
     display: flex;
-    width: 100%;
-    align-items: center;
     justify-content: center;
+  }
+
+  .about-details div a {
+    font-size: 14px;
   }
 }
