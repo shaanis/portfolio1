@@ -26,13 +26,15 @@
   align-items: center;
   margin-right: 50px;
   height: 250px;
-  width: 250px;
+  width: 220px;
   border-radius: 50%;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .about-img img {
   float: right;
+  width: 100%;
+  height: 100%;
 }
 
 .about-details {
@@ -100,8 +102,7 @@
     justify-content: center;
     align-items: center;
     padding-top: 80px;
-    padding-left: 50px;
-    height: auto;
+    height: 100vh;
     width: 100%;
     overflow: hidden;
 
@@ -111,6 +112,12 @@
     display: flex;
     flex-direction: column;
     padding: 60px;
+  }
+
+  .about-details p+h1+span {
+    text-align: justify;
+    line-height: 25px;
+    margin-top: 15px;
   }
 
   .about-details div {
