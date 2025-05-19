@@ -67,6 +67,7 @@
 .service-card h3 {
     margin-bottom: 1rem;
     font-size: 1.2rem;
+    color: white;
 }
 
 .service-card p {
@@ -76,8 +77,8 @@
 }
 
 button {
-    background-color: #00bfff;
-    border: none;
+    background-color: #7cf03d;
+    border: transparent 2px solid;
     padding: 0.6rem 1.2rem;
     border-radius: 999px;
     color: white;
@@ -87,24 +88,11 @@ button {
 }
 
 button:hover {
-    background-color: #0099cc;
+    background-color: transparent;
+    border-color: #7cf03d;
 }
 
-/* @media (max-width: 768px) {
-    .services-section {
-        height: auto;
-        padding: 5rem 0;
-        background: #1f242d;
-    }
-    .services-container {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .service-card {
-        width: 90%;
-    }
-} */
 
 
 /* Responsive typography */
@@ -141,6 +129,8 @@ button:hover {
 
   .service-card {
     padding: 1.5rem;
+    width: 90%;
+    
   }
 }
 

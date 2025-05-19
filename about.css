@@ -11,6 +11,7 @@
   animation: show-content 1.5s linear forwards;
   animation-delay: 1.2s;
   flex-wrap: wrap;
+  background: #1f242d;
 }
 
 @keyframes show-content {
@@ -110,11 +111,18 @@
     margin-bottom: -20px;
   }
 
-  .about-img img {
+  /* .about-img img {
     width: 100%;
     height: 100%;
     margin-bottom: -20px;
-  }
+  } */
+
+  .about-img img {
+  width: 140px;
+  height: 100%;
+  /* object-fit: cover; */
+  
+}
 
   .about-details .about-text{
     display: flex;
@@ -125,13 +133,14 @@
 
   .about-details h1 {
     font-size: 26px;
+    padding: 0 10px;
     /* text-align: center; */
   }
 
   .designation {
     font-size: 20px;
     display: block;
-    margin: 8px 0;
+    padding: 0 10px;
   }
 
   .about-details p {

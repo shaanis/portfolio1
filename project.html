@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project.css">
+    <script src="./script.js"></script>
+              <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Portfolio.</div>
+        <nav>
+            <ul class="nav-list">
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="about.html">About</a></li>
+                <li><a class="nav-link" href="project.html">Project</a></li>
+                <li><a class="nav-link" href="service.html">Service</a></li>
+                <li><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+
+        <!-- small screen -->
+        <div>
+            <i id="menuBtn" class="fa-solid fa-bars "></i>
+            <i id="closeBtn" class="fa-solid fa-x "></i>
+        </div>
+        <div id="menuModal" class="modal">
+            <ul>
+                <li class="nav-link"><a href="index.html">Home</a></li>
+                <li class="nav-link"><a href="about.html">About</a></li>
+                <li class="nav-link"><a href="project.html">Projects</a></li>
+                <li class="nav-link"><a href="service.html">Service</a></li>
+                <li class="nav-link"><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+    <div class="bars-animation">
+        <div class="bar" style="--i:6;"></div>
+        <div class="bar" style="--i:5;"></div>
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:1;"></div>
+    </div>
+
+    <section class="project">
+        <!-- <h2>My Projects</h2> -->
+        <div class="project-container">
+            <div class="project-card">
+                <img  src="./images/image.png" alt="">
+                <div class="project-info">
+                    <h3>Local Guide</h3>
+                    <p>Local Guide is a simple web app that helps users discover nearby places like restaurants and attractions based on their location. It's easy to use and perfect for exploring local spots.</p>
+                    <a href="https://localguide-user.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img  src="./images/cabbon.png" alt="">
+                <div class="project-info">
+                    <h3>Project 1</h3>
+                    <p>Catering Boys is a staff management system designed to organize and track catering staff for events. It helps manage boy assignments, attendance, and schedules..</p>
+                    <a href="https://cabbon-nine.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img  src="./images/weather.png" alt="">
+                <div class="project-info">
+                    <h3>Project 1</h3>
+                    <p>Weather Forecast is a web app that provides real-time weather updates for any location. It shows temperature, humidity, wind speed, and forecasts using data from a weather API.</p>
+                    <a href="https://weather-app-murex-pi-98.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img  src="./images/weather.png" alt="">
+                <div class="project-info">
+                    <h3>Project 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus nulla eget sodales facilisis. Donec quis vulputate metus.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+           
+        </div>
+
+    </section>
+</body>
+</html>
