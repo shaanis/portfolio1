@@ -14,6 +14,10 @@ body {
 .contact {
     height: 100%;
     background: #1f2937;
+    visibility: none;
+    opacity: 0;
+    animation: show-content 0.5s forwards;
+    animation-delay: 1.2s;
 }
 
 .contact-section {
@@ -23,10 +27,7 @@ body {
   justify-content: center;
   padding: 40px 20px;
   /* background: linear-gradient(135deg, #e0f7fa, #ffffff); */
-  visibility: none;
-    opacity: 0;
-    animation: show-content 0.5s forwards;
-    animation-delay: 1.2s;
+  
 }
 
 @keyframes show-content {
